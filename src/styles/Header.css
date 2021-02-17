@@ -1,0 +1,21 @@
+.header {
+  color: #333;
+  height: 7vh;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.main-info {
+  /* width: 40%; */
+  display: flex;
+  align-items: center;
+}
+
+.main-info p{
+  margin-left: 25px;
+}

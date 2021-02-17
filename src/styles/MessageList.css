@@ -1,0 +1,124 @@
+.message-list {
+  overflow-y: scroll;
+  background-color: #eee;
+  height: 60vh;
+  margin: 2vh 0;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.message {
+  padding: 7px 10px 0px 5px;
+  display: inline;
+  background-color: #222222;
+  border-radius: 10px 10px 10px 0;
+}
+
+.message-block {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.current-user-message {
+  border-radius: 10px 10px 0 10px;
+  background-color: rgb(28, 110, 177);
+}
+
+.user-avatar {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.user-avatar-hidden {
+  display: none;
+}
+
+.message-text {
+  padding-right: 10px;
+  max-width: 25vw;
+  margin-left: 10px;
+  color: #fff;
+}
+
+.user-message-block {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.current-user-message-block {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.message-date-block {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message-date {
+  color: #eee;
+  font-size: 0.7em;
+  text-align: end;
+  margin-bottom: -1px;
+}
+
+.like-block {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: -20px;
+  box-shadow: 1px 1px 2px 0px#333;
+}
+
+.like-icon {
+  width: 15px;
+}
+
+.like-block-hidden {
+  visibility: hidden;
+  height: 10px;
+}
+
+.date-line-block {
+  margin-bottom: 25px;
+}
+
+.date-line-text-block {
+  margin: 0 auto -17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 10px; */
+}
+
+.date-line-text {
+  display: inline-flex;
+  height: 20px;
+  padding: 5px 15px 4px;
+  font-size: 0.8em;
+  font-weight: 200;
+  background-color: #ccc;
+  border: #777 2px solid;
+  color: #333;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.date-line-block hr {
+  border: none;
+  height: 2px;
+  /* Set the hr color */
+  color: #777;
+  background-color: #777; /* Modern Browsers */
+}
