@@ -28,9 +28,9 @@
 
 .user-avatar {
   margin-right: 10px;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
 }
 
 .user-avatar-hidden {
@@ -45,13 +45,15 @@
 }
 
 .user-message-block {
-  margin-bottom: 15px;
   display: flex;
   align-items: flex-end;
 }
 
-.current-user-message-block {
+.message-container {
   margin-bottom: 15px;
+}
+
+.current-user-message-block {
   display: flex;
   justify-content: flex-end;
 }
@@ -76,8 +78,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
-  margin-bottom: -20px;
+  margin-top: 0px;
+  margin-bottom: -10px;
   box-shadow: 1px 1px 2px 0px#333;
 }
 

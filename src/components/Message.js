@@ -36,17 +36,19 @@ class Message extends React.Component {
   
   render() {
     return (
-      <div className={this.state.isCurrentUserMessage ? 'current-user-message-block' : 'user-message-block'}>
-        <img className={this.state.isCurrentUserMessage ? 'user-avatar-hidden' : 'user-avatar'} src = {this.state.avatar} alt = "avatar"></img>
-        <div onClick={(e) => this.likeMessage(e)} className = {this.state.isCurrentUserMessage ? 'message current-user-message' : 'message'}>
-          <div className = 'message-block'>
-            <p className = 'message-text'>{this.state.text}</p>
-            <div className = 'message-date-block'>
-              <p className = 'message-date'>{this.getHours()}:{this.getMinutes()}</p>
+      <div className = 'message-container'>
+        <div className={this.state.isCurrentUserMessage ? 'current-user-message-block' : 'user-message-block'}>
+          <img className={this.state.isCurrentUserMessage ? 'user-avatar-hidden' : 'user-avatar'} src = {this.state.avatar} alt = "avatar"></img>
+          <div onClick={(e) => this.likeMessage(e)} className = {this.state.isCurrentUserMessage ? 'message current-user-message' : 'message'}>
+            <div className = 'message-block'>
+              <p className = 'message-text'>{this.state.text}</p>
+              <div className = 'message-date-block'>
+                <p className = 'message-date'>{this.getHours()}:{this.getMinutes()}</p>
+              </div>
             </div>
-          </div>
-          <div className = {this.state.isLiked ? 'like-block' : 'like-block-hidden'}>
-            <img className = 'like-icon' src = { likeImage } alt = 'like icon'></img>
+            <div className = {this.state.isLiked ? 'like-block' : 'like-block-hidden'}>
+              <img className = 'like-icon' src = { likeImage } alt = 'like icon'></img>
+            </div>
           </div>
         </div>
       </div>
